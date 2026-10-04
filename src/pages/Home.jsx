@@ -7,7 +7,7 @@ const Home = () => {
       <section id="Intro" className="intro-section">
         <div className="intro-container">
           <div className="intro-text">
-            <h1>Hello, my name is Grace </h1>           
+            <h1>Hello, my name is Grace Angell </h1>           
             <div className="social-links">
               <a href="https://www.linkedin.com/in/graceagtampubolon/" 
               target="_blank" 
