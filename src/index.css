@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+body {
+  background: linear-gradient(
+  135deg,
+  #ff9d8b 100%,
+  #ffc3b9 45%,
+  #f1a99c 100%
+);
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* HEADER CSS */
+.header {
+  background-color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 3px solid #ffffff; 
+}
+
+.header a {
+  color: #ff9d8b;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 15px;
+  white-space: nowrap; 
+  box-sizing: border-box;
+  transition: all 300ms ease;
+}
+
+.header a.logo {
+  font-family: "Lobster";
+  color: #ff9d8b;
+  font-size: 35px;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 30px;
+  border: none; 
+}
+
+.header a.logo:hover,
+.header a.logo.active {
+  color: #ff9d8b;
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+}
+
+.header a:hover { 
+  font-size: 18px;
+  transition: all 500ms;
+  font-size-adjust: 20px;
+  border-radius: 15px;
+  
+}
+
+.header a.active {
+  background-color: #fefefe;
+  color: #ff9d8b;
+  font-weight: bold;
+  border: 3px solid #ff9d8b;
+  }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    gap: 15px;
+    padding: 15px 20px; 
+  }
+
+  .header nav {
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 8px;
+  }
+
+  .header a {
+    padding: 6px 12px; 
+    font-size: 13px;  
+  }
+}
+
+
+/* FOOTER CSS */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  background-color: #fefefe;
+  padding: 2px 5px;
+  box-sizing: border-box;
+}
+
+.footer p{ 
+  font-family: "Lobster";
+  color:#ff9d8b;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 5px
+
+}
+
+/* INTRO SECTION */
+.intro-section {
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.intro-section::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  margin: 50px auto 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+}
+
+.intro-container {
+  width: 100%;             
+  max-width: 1400px;           
+  margin: 0 auto;                 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 10px;               
+  padding: 60px 10px;
+}
+
+
+.intro-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-text h1 {
+  width: fit-content;
+  max-width: 530px;
+  font-size: 35px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ffffff;
+
+  animation:
+    typing 5s steps(20, end) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  45% {
+    width: 100%;
+  }
+
+  70% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #ffffff;
+  }
+}
+
+
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 500px;       
+  height: auto;           
+  border-radius: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 30px; 
+  margin-top: 15px; 
+  justify-content: center;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  color:#ff9d8b;
+  background-color: #fefefe; 
+  border-radius: 50%; 
+  text-decoration: none;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-primary i {
+  font-size: 30px; 
+}
+
+.btn-primary:hover {
+  background-color: #ffffff; 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+/* ABOUT ME SECTION */
+
+.AboutMe-section {
+  width: 100%;
+  padding: 70px 20px;
+  box-sizing: border-box;
+}
+
+.AboutMe-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.AboutMe-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutMe-text h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.AboutMe-text p {
+  width: 100%;
+  max-width: max-content;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ffffff;
+  text-align: justify;
+  
+}
+
+.AboutMe-section::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  margin: 50px auto 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+}
+
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .intro-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+
+
+
+  .intro-text h1 {
+    font-size: 23px; 
+  }
+
+  .intro-text p {     
+    font-size: 14px;   }
+
+  .intro-image {
+    width: 100%;
+  }
+
+  .intro-image img {
+    width: 70%;
+    max-width: 220px;
+    height: auto;
+  }
+}
+
+/* EXPERIENCES */
+.experience-header {
+  max-width: 750px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.experience-header h1 {
+  font-family: "Lobster";
+  letter-spacing: 3px;
+  padding-top: 60px;
+  margin-bottom: 10px;
+  font-weight:lighter;
+  font-size: 45px;
+  color: #fefefe;
+}
+
+
+.experience-timeline {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 160px;
+  top: 0;
+  bottom: 30px;
+  width: 2px;
+  background: #f0d7df;
+}
+
+.experience-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  column-gap: 35px;
+  margin-bottom: 35px;
+}
+
+.experience-date {
+  padding-top: 19px;
+  padding-right: 30px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.experience-date span {
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.experience-dot {
+  position: absolute;
+  left: 160px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: #ff917e;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 2px #ff9d8b;
+}
+
+
+.experience-card {
+  padding: 20px 24px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+
+.experience-type {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #fe927f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.experience-card h2 {
+  margin-bottom: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  color:#fc8a76;
+}
+
+.experience-card h3 {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+.experience-card p {
+  margin-bottom: 14px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.experience-tags span {
+  padding: 4px 9px;
+  background: #fff0f4;
+  border-radius: 20px;
+  color: #ff9d8b;
+  font-weight: 700;
+  font-size: 10px;
+  
+}
+
+@media (max-width: 700px) {
+
+  .experience-section {
+    padding: 60px 20px;
+  }
+
+  .experience-header h1 {
+    font-size: 30px;
+  }
+
+  .experience-timeline::before {
+    left: 8px;
+  }
+
+  .experience-item {
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 25px;
+  }
+
+  .experience-date {
+    padding: 0;
+    margin-bottom: 7px;
+    text-align: left;
+  }
+
+  .experience-dot {
+    left: 8px;
+    top: 5px;
+  }
+
+  .experience-card {
+    padding: 18px 20px;
+  }
+
+  .experience-card h2 {
+    font-size: 17px;
+  }
+}
