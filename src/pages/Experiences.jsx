@@ -22,8 +22,11 @@ const Experiences = () => {
                   memos, and managing decision memo documentation.
                 </p>
                 <div className="experience-tags">
-                  <span>Microsoft Excel</span>
                   <span>Data Processing</span>
+                  <span>Data Validation</span>
+                  <span>Microsoft Excel</span>
+                  <span>Business Analysis</span>
+                  <span>Management Reporting</span>
                 </div>
               </div>
             </div>
@@ -42,8 +45,11 @@ const Experiences = () => {
                   activities and supported the learning and evaluation process.
                 </p>
                 <div className="experience-tags">
-                  <span>UI/UX</span>
-                  <span>Figma</span>
+                <span>UI/UX Design</span>
+                <span>Interaction Design</span>
+                <span>Design Thinking</span>
+                <span>Usability Evaluation</span>
+                <span>Design Feedback</span>
                 </div>
               </div>
             </div>
@@ -65,6 +71,8 @@ const Experiences = () => {
                   <span>Flutter</span>
                   <span>Dart</span>
                   <span>Firebase</span>
+                  <span>UI Development</span>
+                  <span>Mobile App Development</span>
                 </div>
               </div>
             </div>
@@ -85,6 +93,7 @@ const Experiences = () => {
                 <div className="experience-tags">
                   <span>WordPress</span>
                   <span>Web Management</span>
+                  <span>Content Management</span>
                 </div>
               </div>
             </div>

@@ -160,7 +160,7 @@ code {
   align-items: center;
   justify-content: space-between; 
   gap: 10px;               
-  padding: 60px 10px;
+  padding: 50px 10px;
 }
 
 
@@ -221,13 +221,14 @@ code {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .intro-image img {
-  width: 100%;
-  max-width: 500px;       
-  height: auto;           
-  border-radius: 20px;
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .social-links {
@@ -265,7 +266,7 @@ code {
 
 .AboutMe-section {
   width: 100%;
-  padding: 70px 20px;
+  padding: 50px 20px 30px 20px;
   box-sizing: border-box;
 }
 
@@ -273,7 +274,7 @@ code {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 80px 60px;
   box-sizing: border-box;
 }
 
@@ -309,7 +310,7 @@ code {
   display: block;
   width: 80%;
   height: 1px;
-  margin: 50px auto 0;
+  margin: 50px 0px 20px 0px;
   background: linear-gradient(
     to right,
     transparent,
@@ -330,8 +331,6 @@ code {
     gap: 25px;
     padding: 30px 20px;
   }
-
-
 
   .intro-text h1 {
     font-size: 23px; 
@@ -360,7 +359,6 @@ code {
 
 .experience-header h1 {
   font-family: "Lobster";
-  letter-spacing: 3px;
   padding-top: 60px;
   margin-bottom: 10px;
   font-weight:lighter;
@@ -523,3 +521,224 @@ code {
     font-size: 17px;
   }
 }
+
+/* Projets */
+
+.Projects-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.Projects-container h1 {
+  font-family: "Lobster";
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  font-weight:lighter;
+  font-size: 45px;
+  color: #fefefe;
+  text-align: center;
+}
+
+.Projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.Project-card {
+  padding: 30px;
+  border: 1px solid #ffb5a8;
+  border-radius: 20px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.Project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 157, 139, 0.2);
+}
+
+.Project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.Project-header h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.Project-type {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.Project-date {
+  color: #ff8f7d;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.Project-description {
+  margin-top: 15px;
+  line-height: 1.7;
+  color: #444;
+  font-size: 15px;
+}
+
+.Project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.Project-links a {
+  padding: 9px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  background: #ff9d8b;
+  transition: 0.3s ease;
+  font-size: 10px;
+}
+
+.Project-links a:hover {
+  background: #f58270;
+}
+
+/* SKILLS */
+.Skills-container,
+.Certificates-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.Skills-container h1,
+.Certificates-container h1 {
+  font-family: "Lobster";
+  padding-top: 60px;
+  margin-bottom: 10px;
+  font-weight:lighter;
+  font-size: 45px;
+  color: #fefefe;
+}
+
+/* ================= SKILLS ================= */
+
+.Skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.Skill-card {
+  padding: 25px;
+  border: 1px solid #ffb5a8;
+  border-radius: 20px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+.Skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 157, 139, 0.2);
+}
+
+.Skill-card h2 {
+  margin: 0 0 20px;
+  font-size: 21px;
+}
+
+.Skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Skill-list span {
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #fff0ed;
+  color: #e87967;
+  font-size: 14px;
+}
+
+
+/* ================= CERTIFICATES ================= */
+
+.Certificates-container {
+  margin-top: 100px;
+}
+
+.Certificates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Certificate-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  padding: 22px 25px;
+
+  border: 1px solid #ffb5a8;
+  border-radius: 18px;
+  background: white;
+
+  transition: 0.3s ease;
+}
+
+.Certificate-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 20px rgba(255, 157, 139, 0.15);
+}
+
+.Certificate-card h2 {
+  margin: 0 0 5px;
+  font-size: 19px;
+}
+
+.Certificate-card p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.Certificate-card > span {
+  color: #ff8f7d;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+  .Skills-page {
+    padding: 60px 20px;
+  }
+
+  .Skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Certificate-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Skills-container h1,
+  .Certificates-container h1 {
+    font-size: 38px;
+  }
+}
+

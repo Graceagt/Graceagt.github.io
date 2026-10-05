@@ -1,101 +1,112 @@
-const Experiences = () => {
-    return (
-      <main>
-        <section id="experience" className="experience-section">
-  
-          <div className="experience-header">
-            <p className="section-label">MY JOURNEY</p>
-            <h1>My Experiences</h1>         
-          </div>
-  
-          <div className="experience-timeline">
-            {/* Experience 1 */}
-            <div className="experience-item">
-              <div className="experience-date">
-                <span>Aug 2026 - Present</span>
-              </div>
-              <div className="experience-dot"></div>
-              <div className="experience-card">
-                <span className="experience-type">INTERNSHIP</span>
-                <h2>Merchant Business Division - PT. Bank Central Asia Tbk</h2>
-                <p>
-                  Processing management data, reviewing and recapitulating
-                  memos, and managing decision memo documentation.
-                </p>
-                <div className="experience-tags">
-                  <span>Microsoft Excel</span>
-                  <span>Data Processing</span>
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "CutieShoot",
+      type: "Self Project",
+      role: "Full Stack Web Developer",
+      date: "Jun 2026",
+      description:
+        "Developed a Laravel and MySQL based online photobooth application with camera capture, filters, frames, photostrips, gallery storage, photo download, and watermark features, supported by a responsive interface.",
+      links: {
+        github: "https://github.com/yourusername/cutieshoot",
+        drive: "https://drive.google.com/your-link",
+      },
+    },
+
+    {
+      title: "HR Attrition Dashboard",
+      type: "Self Project",
+      role: "Data Analyst & Visualization",
+      date: "Jun 2026",
+      description:
+        "Developed an interactive Power BI dashboard using the IBM HR Analytics dataset, featuring KPIs, department analysis, workforce insights, and interactive filters to identify employee attrition patterns and risk factors.",
+      links: {
+        github: "https://github.com/yourusername/hr-attrition-dashboard",
+        drive: "https://drive.google.com/your-link",
+      },
+    },
+
+    {
+      title: "PyPlant",
+      type: "Academic Project",
+      role: "Mobile Developer",
+      date: "Jun 2024",
+      description:
+        "Developed a Flutter and Firebase based plant care mobile application with a Figma designed interface, featuring plant information, articles, categories, favorites, and user account functionality.",
+      links: {
+        github: "https://github.com/yourusername/pyplant",
+        drive: "https://drive.google.com/your-link",
+      },
+    },
+
+    {
+      title: "Malaria Prediction",
+      type: "Bachelor's Thesis",
+      role: "Machine Learning",
+      date: "2026",
+      description:
+        "Prediction of Malaria Cases in Indonesia Using a Multi-Layer Stacking Model Based on Environmental Data.",
+      links: {
+        github: "https://github.com/yourusername/malaria-prediction",
+        drive: "https://drive.google.com/your-link",
+      },
+    },
+  ];
+
+  return (
+    <section className="Projects-section">
+      <div className="Projects-container">
+
+        <h1>Projects</h1>
+
+        <div className="Projects-list">
+          {projects.map((project, index) => (
+            <div className="Project-card" key={index}>
+
+              <div className="Project-header">
+                <div>
+                  <h2>{project.title}</h2>
+
+                  <p className="Project-type">
+                    {project.type} | {project.role}
+                  </p>
                 </div>
+
+                <span className="Project-date">
+                  {project.date}
+                </span>
               </div>
+
+              <p className="Project-description">
+                {project.description}
+              </p>
+
+              <div className="Project-links">
+                <a
+                  href={project.links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+
+                <a
+                  href={project.links.drive}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Drive
+                </a>
+              </div>
+
             </div>
-  
-            {/* Experience 2 */}
-            <div className="experience-item">
-              <div className="experience-date">
-                <span>Aug 2025 – Dec 2025</span>
-              </div>  
-              <div className="experience-dot"></div>
-              <div className="experience-card">
-                <span className="experience-type">TEACHING ASSISTANT</span>
-                <h2>Interaction Design Practicum Assistant</h2>
-                <h3>Universitas Airlangga</h3>
-                <p>
-                  Assisted students in interaction design practicum
-                  activities and supported the learning and evaluation process.
-                </p>
-                <div className="experience-tags">
-                  <span>UI/UX</span>
-                  <span>Figma</span>
-                </div>
-              </div>
-            </div>
-  
-            {/* Experience 3 */}
-            <div className="experience-item">
-              <div className="experience-date">
-                <span>Feb 2025 – Jun 2025</span>
-              </div>
-              <div className="experience-dot"></div>
-              <div className="experience-card">
-                <span className="experience-type">TEACHING ASSISTANT</span>
-                <h2>Mobile Programming Practicum Assistant</h2>
-                <h3>Universitas Airlangga</h3>
-                <p>
-                  Assisted students with Flutter UI development, state
-                  management, database integration, and practicum evaluation.
-                </p>
-                <div className="experience-tags">
-                  <span>Flutter</span>
-                  <span>Dart</span>
-                  <span>Firebase</span>
-                </div>
-              </div>
-            </div>
-  
-            {/* Experience 4 */}
-            <div className="experience-item">
-              <div className="experience-date">
-                <span>Feb 2025 – Jun 2025</span>
-              </div>
-              <div className="experience-dot"></div>
-              <div className="experience-card">
-                <span className="experience-type">INTERNSHIP</span>
-                <h2>Web Administrator</h2>
-                <h3>Department of Chemistry, FST UNAIR</h3>
-                <p>
-                  Managed website content including news, announcements,
-                  and departmental updates using WordPress.
-                </p>
-                <div className="experience-tags">
-                  <span>WordPress</span>
-                  <span>Web Management</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    );
-  };
-  
-  export default Experiences;
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

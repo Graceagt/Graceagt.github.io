@@ -1,4 +1,4 @@
-import fotoProfil from '../assets/Foto.jpg'; 
+import fotoProfil from '../assets/Foto.jpeg'; 
 
 const Home = () => {
   return (
@@ -53,8 +53,6 @@ const Home = () => {
             </div>          
         </div>
       </section>
-
-
     </main>
   );
 };
