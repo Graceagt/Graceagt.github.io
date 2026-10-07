@@ -26,6 +26,7 @@ const Home = () => {
               </a>
 
               <a href="https://drive.google.com/file/d/1eI-72ZB7_tL8YQQgAj4bPvlreOQHxOtp/view?usp=sharing" 
+              target="_blank"
               className="btn-primary" 
               aria-label="Resume">
               <i className="fas fa-file-alt" aria-hidden="true"></i>
