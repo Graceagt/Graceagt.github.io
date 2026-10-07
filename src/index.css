@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
-html, body {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
-  width: 100%;
-  overflow-x: hidden; 
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
