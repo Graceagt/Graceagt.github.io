@@ -30,7 +30,7 @@ code {
 }
 
 
-/* HEADER CSS */
+/* --------------------------------------HEADER--------------------------------------*/
 .header {
   background-color: #fefefe;
   display: flex;
@@ -92,27 +92,9 @@ code {
   border: 3px solid #ff9d8b;
   }
 
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column; 
-    gap: 15px;
-    padding: 15px 20px; 
-  }
-
-  .header nav {
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 8px;
-  }
-
-  .header a {
-    padding: 6px 12px; 
-    font-size: 13px;  
-  }
-}
 
 
-/* FOOTER CSS */
+/* --------------------------------------FOOTER--------------------------------------*/
 .footer {
   bottom: 0;
   left: 0;
@@ -132,7 +114,8 @@ code {
 
 }
 
-/* INTRO SECTION */
+/*--------------------------------------PAGE HOME--------------------------------------*/
+/*-----INTRO-----*/
 .intro-section {
   width: 100%;
   padding: 20px 30px;
@@ -162,7 +145,6 @@ code {
   gap: 10px;               
   padding: 50px 10px;
 }
-
 
 .intro-text {
   flex: 1;
@@ -216,7 +198,6 @@ code {
   }
 }
 
-
 .intro-image {
   flex: 1;
   display: flex;
@@ -262,7 +243,7 @@ code {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
-/* ABOUT ME SECTION */
+/*-----ABOUT ME-----*/
 
 .AboutMe-section {
   width: 100%;
@@ -320,37 +301,7 @@ code {
 }
 
 
-@media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-  }
-
-  .intro-container {
-    flex-direction: column-reverse;
-    text-align: center;
-    gap: 25px;
-    padding: 30px 20px;
-  }
-
-  .intro-text h1 {
-    font-size: 23px; 
-  }
-
-  .intro-text p {     
-    font-size: 14px;   }
-
-  .intro-image {
-    width: 100%;
-  }
-
-  .intro-image img {
-    width: 70%;
-    max-width: 220px;
-    height: auto;
-  }
-}
-
-/* EXPERIENCES */
+/*--------------------------------------PAGE EXPERIENCES--------------------------------------*/
 .experience-header {
   max-width: 750px;
   margin: 0 auto 55px;
@@ -366,14 +317,12 @@ code {
   color: #fefefe;
 }
 
-
 .experience-timeline {
   position: relative;
   max-width: 850px;
   margin: 0 auto;
   padding: 10px 0;
 }
-
 
 .experience-timeline::before {
   content: "";
@@ -419,7 +368,6 @@ code {
   box-shadow: 0 0 0 2px #ff9d8b;
 }
 
-
 .experience-card {
   padding: 20px 24px;
   background: #fff;
@@ -433,7 +381,6 @@ code {
   transform: translateY(-3px);
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
-
 
 .experience-type {
   display: inline-block;
@@ -458,7 +405,6 @@ code {
   font-weight: 500;
 }
 
-
 .experience-card p {
   margin-bottom: 14px;
   color: #555;
@@ -482,47 +428,7 @@ code {
   
 }
 
-@media (max-width: 700px) {
-
-  .experience-section {
-    padding: 60px 20px;
-  }
-
-  .experience-header h1 {
-    font-size: 30px;
-  }
-
-  .experience-timeline::before {
-    left: 8px;
-  }
-
-  .experience-item {
-    display: block;
-    padding-left: 30px;
-    margin-bottom: 25px;
-  }
-
-  .experience-date {
-    padding: 0;
-    margin-bottom: 7px;
-    text-align: left;
-  }
-
-  .experience-dot {
-    left: 8px;
-    top: 5px;
-  }
-
-  .experience-card {
-    padding: 18px 20px;
-  }
-
-  .experience-card h2 {
-    font-size: 17px;
-  }
-}
-
-/* Projets */
+/*--------------------------------------PAGE PROJECTS--------------------------------------*/
 
 .Projects-container {
   max-width: 900px;
@@ -611,10 +517,7 @@ code {
   background: #f58270;
 }
 
-/* SKILLS */
-/* =========================
-   SKILLS SECTION
-========================= */
+/* --------------------------------------PAGE SKILLS-------------------------------------- */
 
 .Skills-section {
   width: 100%;
@@ -626,11 +529,6 @@ code {
   max-width: 900px;
   margin: 0 auto;
 }
-
-
-/* =========================
-   TITLE
-========================= */
 
 .Skills-title {
   margin-bottom: 50px;
@@ -648,11 +546,7 @@ code {
   margin: 0;
 }
 
-
-/* =========================
-   SKILLS LIST
-========================= */
-
+/* -----SKILLS----- */
 .Skills-list {
   width: 100%;
 }
@@ -663,18 +557,12 @@ code {
   padding: 30px 0;
 }
 
-
-/* NUMBER */
-
 .Skill-number {
   min-width: 45px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.65);
   font-weight: 600;
 }
-
-
-/* CONTENT */
 
 .Skill-content {
   flex: 1;
@@ -686,11 +574,6 @@ code {
   font-weight: 600;
   color: white;
 }
-
-
-/* =========================
-   SKILL TAGS
-========================= */
 
 .Skill-tags {
   display: flex;
@@ -713,11 +596,6 @@ code {
   border-color: white;
 }
 
-
-/* =========================
-   SECTION DIVIDER
-========================= */
-
 .Skills-section::after {
   content: "";
   display: block;
@@ -733,10 +611,7 @@ code {
   );
 }
 
-
-/* =========================
-   CERTIFICATES
-========================= */
+/* -----CERTIFICATES-----*/
 
 .Certificates-section {
   margin-top: 70px;
@@ -752,11 +627,6 @@ code {
   color: white;
 }
 
-
-/* =========================
-   CERTIFICATE ITEM
-========================= */
-
 .Certificate-item {
   position: relative;
 
@@ -768,8 +638,6 @@ code {
   padding: 25px 0;
 }
 
-
-/* GRADIENT LINE */
 
 .Certificate-item:not(:last-child)::after {
   content: "";
@@ -789,9 +657,6 @@ code {
   );
 }
 
-
-/* CERTIFICATE CONTENT */
-
 .Certificate-content {
   flex: 1;
 }
@@ -810,8 +675,6 @@ code {
 }
 
 
-/* DATE */
-
 .Certificate-date {
   color: rgba(255, 255, 255, 0.75);
   font-size: 14px;
@@ -822,6 +685,91 @@ code {
 /* =========================
    MOBILE
 ========================= */
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    gap: 15px;
+    padding: 15px 20px; 
+  }
+
+  .header nav {
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 8px;
+  }
+
+  .header a {
+    padding: 6px 12px; 
+    font-size: 13px;  
+  }
+
+  .intro-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .intro-text h1 {
+    font-size: 23px; 
+  }
+
+  .intro-text p {     
+    font-size: 14px;   }
+
+  .intro-image {
+    width: 100%;
+  }
+
+  .intro-image img {
+    width: 70%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  .AboutMe-container {
+    box-sizing: border-box;
+  }
+
+  .experience-section {
+    padding: 60px 20px;
+  }
+
+  .experience-header h1 {
+    font-size: 30px;
+  }
+
+  .experience-timeline::before {
+    left: 8px;
+  }
+
+  .experience-item {
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 25px;
+  }
+
+  .experience-date {
+    padding: 0;
+    margin-bottom: 7px;
+    text-align: left;
+  }
+
+  .experience-dot {
+    left: 8px;
+    top: 5px;
+  }
+
+  .experience-card {
+    padding: 18px 20px;
+  }
+
+  .experience-card h2 {
+    font-size: 17px;
+  }
+}
 
 @media (max-width: 700px) {
 
