@@ -59,7 +59,7 @@ const Home = () => {
             <section id="Headline" className="Headline-section">
             <div className="Headline-container">
             <div className="Headline-text">
-            <h2>Data, Business & Technology Enthusiast</h2>
+            <h2>Data Business & Technology Enthusiast</h2>
             </div>          
             </div>
       </section>

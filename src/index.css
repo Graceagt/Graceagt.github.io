@@ -302,7 +302,7 @@ code {
 
 .Headline-section {
   width: 100%;
-  padding: 10px 20px 60px 20px;
+  padding: 100px 20px 60px 20px;
   box-sizing: border-box;
 }
 
@@ -334,7 +334,7 @@ code {
   display: block;
   width: 80%;
   height: 1px;
-  margin: 10px 0px 20px 0px;
+  margin: 100px 0px 20px 0px;
   background: linear-gradient(
     to right,
     transparent,
