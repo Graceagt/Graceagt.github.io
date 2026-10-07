@@ -118,7 +118,6 @@ code {
 /*-----INTRO-----*/
 .intro-section {
   width: 100%;
-  padding: 20px 30px;
 }
 
 .intro-section::after {
@@ -247,7 +246,7 @@ code {
 
 .AboutMe-section {
   width: 100%;
-  padding: 50px 20px 30px 20px;
+  padding: 80px 20px 20px 20px;
   box-sizing: border-box;
 }
 
@@ -255,7 +254,6 @@ code {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 60px;
   box-sizing: border-box;
 }
 
@@ -266,7 +264,7 @@ code {
 }
 
 .AboutMe-text h2 {
-  margin: 0 0 20px;
+  margin: 0 0 30px;
   text-align: center;
   font-family: "Lobster", cursive;
   font-size: 45px;
@@ -276,14 +274,14 @@ code {
 }
 
 .AboutMe-text p {
-  width: 100%;
+  width: 80%;
   max-width: max-content;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.8;
   color: #ffffff;
   text-align: justify;
-  
+  margin-bottom: 45px;
 }
 
 .AboutMe-section::after {
@@ -291,7 +289,52 @@ code {
   display: block;
   width: 80%;
   height: 1px;
-  margin: 50px 0px 20px 0px;
+  margin: 70px 0px 10px 0px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+}
+
+/*-----HEADLINE-----*/
+
+.Headline-section {
+  width: 100%;
+  padding: 10px 20px 60px 20px;
+  box-sizing: border-box;
+}
+
+.Headline-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.Headline-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Headline-text h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.Headline-section::after  {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  margin: 10px 0px 20px 0px;
   background: linear-gradient(
     to right,
     transparent,
@@ -302,29 +345,35 @@ code {
 
 
 /*--------------------------------------PAGE EXPERIENCES--------------------------------------*/
-.experience-header {
-  max-width: 750px;
-  margin: 0 auto 55px;
-  text-align: center;
+
+.Experiences-section {
+  width: 100%;
+  padding: 20px 60px;
+  box-sizing: border-box;
 }
 
-.experience-header h1 {
+.Experiences-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.Experiences-header h1 {
   font-family: "Lobster";
-  padding-top: 60px;
-  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 30px;
   font-weight:lighter;
-  font-size: 45px;
+  font-size: 50px;
   color: #fefefe;
 }
 
-.experience-timeline {
+.Experiences-timeline {
   position: relative;
   max-width: 850px;
   margin: 0 auto;
   padding: 10px 0;
 }
 
-.experience-timeline::before {
+.Experiences-timeline::before {
   content: "";
   position: absolute;
   left: 160px;
@@ -334,7 +383,7 @@ code {
   background: #f0d7df;
 }
 
-.experience-item {
+.Experiences-item {
   position: relative;
   display: grid;
   grid-template-columns: 160px 1fr;
@@ -342,20 +391,20 @@ code {
   margin-bottom: 35px;
 }
 
-.experience-date {
+.Experiences-date {
   padding-top: 19px;
   padding-right: 30px;
   text-align: right;
   white-space: nowrap;
 }
 
-.experience-date span {
+.Experiences-date span {
   color: #fafafa;
   font-size: 14px;
   font-weight: 700;
 }
 
-.experience-dot {
+.Experiences-dot {
   position: absolute;
   left: 160px;
   top: 20px;
@@ -368,7 +417,7 @@ code {
   box-shadow: 0 0 0 2px #ff9d8b;
 }
 
-.experience-card {
+.Experiences-card {
   padding: 20px 24px;
   background: #fff;
   border: 1px solid #eee;
@@ -377,12 +426,12 @@ code {
   transition: 0.3s ease;
 }
 
-.experience-card:hover {
+.Experiences-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
 
-.experience-type {
+.Experiences-type {
   display: inline-block;
   margin-bottom: 8px;
   color: #fe927f;
@@ -391,34 +440,34 @@ code {
   letter-spacing: 1.2px;
 }
 
-.experience-card h2 {
+.Experiences-card h2 {
   margin-bottom: 3px;
   font-size: 15px;
   font-weight: 700;
   color:#fc8a76;
 }
 
-.experience-card h3 {
+.Experiences-card h3 {
   margin-bottom: 10px;
   color: #000000;
   font-size: 13px;
   font-weight: 500;
 }
 
-.experience-card p {
+.Experiences-card p {
   margin-bottom: 14px;
   color: #555;
   font-size: 13px;
   line-height: 1.6;
 }
 
-.experience-tags {
+.Experiences-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-.experience-tags span {
+.Experiences-tags span {
   padding: 4px 9px;
   background: #fff0f4;
   border-radius: 20px;
@@ -430,40 +479,41 @@ code {
 
 /*--------------------------------------PAGE PROJECTS--------------------------------------*/
 
+.Projects-section {
+  width: 100%;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
 .Projects-container {
   max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 30px;
 }
 
 .Projects-container h1 {
   font-family: "Lobster";
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 10px;
-  font-weight:lighter;
-  font-size: 45px;
-  color: #fefefe;
   text-align: center;
-}
-
-.Projects-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  padding-top: 30px;
+  font-weight:lighter;
+  font-size: 50px;
+  color: #fefefe;
 }
 
 .Project-card {
   padding: 30px;
-  border: 1px solid #ffb5a8;
-  border-radius: 20px;
-  background: #fff;
+  background: #fafafa;
+  border-radius: 18px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   transition: 0.3s ease;
-}
+  }
 
-.Project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(255, 157, 139, 0.2);
+.Projects-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
 }
 
 .Project-header {
@@ -476,185 +526,287 @@ code {
 .Project-header h2 {
   margin: 0 0 8px;
   font-size: 20px;
+  color: #fc8a76;
 }
 
 .Project-type {
   margin: 0;
-  color: #777;
-  font-size: 12px;
+  font-size: 14px;
+  color:#fc8a76
 }
 
 .Project-date {
-  color: #ff8f7d;
-  font-weight: 500;
+  font-size: 12px;
+  color: #fc8a76;
   white-space: nowrap;
 }
 
 .Project-description {
-  margin-top: 15px;
+  margin: 20px 0;
   line-height: 1.7;
-  color: #444;
-  font-size: 15px;
+  color: #555;
+  font-size: 13px;
 }
 
-.Project-links {
+.Project-bottom {
   display: flex;
-  gap: 15px;
-  margin-top: 25px;
+  align-items: center;
+  gap: 25px;
 }
 
-.Project-links a {
-  padding: 9px 18px;
-  border-radius: 20px;
+.Project-link {
   text-decoration: none;
-  color: white;
-  background: #ff9d8b;
-  transition: 0.3s ease;
+  padding: 4px 9px;
+  background: #fff0f4;
+  border-radius: 20px;
+  color: #ff9d8b;
+  font-weight: 700;
   font-size: 10px;
 }
 
-.Project-links a:hover {
-  background: #f58270;
+.Project-toggle {
+  border: none;
+  padding: 4px 9px;
+  background: #fff0f4;
+  border-radius: 20px;
+  color: #ff9d8b;
+  font-weight: 700;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Project-toggle:hover {
+  opacity: 0.7;
+}
+
+.Project-toggle span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.Project-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  animation: showImages 0.3s ease;
+}
+
+.Project-images img {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.Project-images img:hover {
+  transform: scale(1.02);
+}
+
+.Image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.75);
+  cursor: zoom-out;
+}
+
+.Image-modal img {
+  max-width: 90%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  cursor: default;
+}
+
+.Image-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@keyframes showImages {
+
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 }
 
 /* --------------------------------------PAGE SKILLS-------------------------------------- */
 
 .Skills-section {
   width: 100%;
-  padding: 80px 60px;
+  padding: 50px 60px;
   box-sizing: border-box;
 }
 
 .Skills-container {
-  max-width: 900px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .Skills-title {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .Skills-title h1 {
-  font-size: 45px;
-  margin: 0 0 10px;
-  color: white;
+  font-family: "Lobster";
+  text-align: center;
+  padding-top: 30px;
+  font-weight:lighter;
+  font-size: 50px;
+  color: #fefefe;
 }
 
 .Skills-title p {
-  font-size: 17px;
-  color: rgba(255, 255, 255, 0.8);
   margin: 0;
+  font-size: 17px;
+  color:#eeeeee;
+  text-align: center;
 }
 
-/* -----SKILLS----- */
+
 .Skills-list {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
 }
 
-.Skill-item {
+.Skill-card {
+  width: 100%;
+  padding: 25px 28px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: none;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.Skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.Skill-header { 
+  width: 100%;
   display: flex;
-  gap: 30px;
-  padding: 30px 0;
+  align-items: center;
+}
+
+.Skill-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .Skill-number {
-  min-width: 45px;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.65);
-  font-weight: 600;
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #fc8a76;
 }
 
-.Skill-content {
-  flex: 1;
-}
-
-.Skill-content h2 {
-  margin: 0 0 18px;
-  font-size: 23px;
-  font-weight: 600;
-  color: white;
+.Skill-info h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #fc8a76;
 }
 
 .Skill-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 22px;
 }
 
 .Skill-tags span {
-  padding: 8px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding: 4px 9px;
+  background: #fff0f4;
   border-radius: 20px;
-  font-size: 14px;
-  color: white;
-  background: rgba(255, 255, 255, 0.08);
-  transition: 0.3s ease;
+  color: #ff9d8b;
+  font-weight: 700;
+  font-size: 10px;
 }
 
 .Skill-tags span:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: white;
+  background: #eeeeee;
+  border-color: #d5d5d5;
 }
 
-.Skills-section::after {
-  content: "";
-  display: block;
-  width: 80%;
-  height: 1px;
-  margin: 50px auto 20px auto;
-
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.7),
-    transparent
-  );
-}
-
-/* -----CERTIFICATES-----*/
 
 .Certificates-section {
-  margin-top: 70px;
+  margin-top: 75px;
 }
 
 .Certificates-title {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .Certificates-title h2 {
-  font-size: 30px;
-  margin: 0;
-  color: white;
+  font-family: "Lobster";
+  text-align: center;
+  padding-top: 30px;
+  font-weight:lighter;
+  font-size: 50px;
+  color: #fefefe;
 }
 
-.Certificate-item {
-  position: relative;
 
+.Certificates-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 35px;
+}
+
+.Certificate-card {
+  width: 100%;
+  padding: 25px 28px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: none;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.Certificate-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.Certificate-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   gap: 30px;
-  padding: 25px 0;
-}
-
-
-.Certificate-item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  height: 1px;
-
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.5),
-    transparent
-  );
 }
 
 .Certificate-content {
@@ -662,29 +814,125 @@ code {
 }
 
 .Certificate-content h3 {
-  margin: 0 0 6px;
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #fc8a76;
 }
 
 .Certificate-content p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 14px;
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #fc8a76;
 }
 
+.Certificate-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
 
 .Certificate-date {
-  color: rgba(255, 255, 255, 0.75);
   font-size: 14px;
-  white-space: nowrap;
+  margin: 0 0 8px;
+  color: #555;
+}
+
+.Certificate-toggle {
+  border: none;
+  padding: 4px 9px;
+  background: #fff0f4;
+  border-radius: 20px;
+  color: #ff9d8b;
+  font-weight: 700;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Certificate-toggle:hover {
+  opacity: 0.7;
+}
+
+.Certificate-toggle span {
+  font-size: 20px;
+  line-height: 1;
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+.Certificate-image {
+  width: 100%;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #eeeeee;
+  animation: showCertificate 0.3s ease;
+}
+
+.Certificate-image img {
+  width: 100%;
+  max-height: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Certificate-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
+}
+
+.Certificate-modal img {
+  max-width: 90%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  cursor: default;
+}
+
+.Certificate-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+
+  color: white;
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.Certificate-close:hover {
+  color: #f5628c;
+}
+
+@keyframes showCertificate {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ---------------------------------------MOBILE--------------------------------------- */
 
 
 @media (max-width: 768px) {
@@ -705,15 +953,20 @@ code {
     font-size: 13px;  
   }
 
+  .intro-section{
+    padding: 0px
+  }
+
   .intro-container {
     flex-direction: column-reverse;
     text-align: center;
-    gap: 20px;
+    gap: 20px; 
     box-sizing: border-box;
   }
 
   .intro-text h1 {
     font-size: 23px; 
+    
   }
 
   .intro-text p {     
@@ -733,96 +986,156 @@ code {
     box-sizing: border-box;
   }
 
-  .experience-section {
-    padding: 60px 20px;
+  .Experiences-section {
+    padding: 20px 30px;
   }
 
-  .experience-header h1 {
+  .Experiences-header h1 {
     font-size: 30px;
   }
 
-  .experience-timeline::before {
+  .Experiences-timeline::before {
     left: 8px;
   }
 
-  .experience-item {
+  .Experiences-item {
     display: block;
     padding-left: 30px;
     margin-bottom: 25px;
   }
 
-  .experience-date {
+  .Experiences-date {
     padding: 0;
     margin-bottom: 7px;
     text-align: left;
   }
 
-  .experience-dot {
+  .Experiences-dot {
     left: 8px;
     top: 5px;
   }
 
-  .experience-card {
+  .Experiences-card {
     padding: 18px 20px;
   }
 
-  .experience-card h2 {
+  .Experiences-card h2 {
     font-size: 17px;
   }
-}
 
-@media (max-width: 700px) {
-
-  .Skills-section {
+  .Projects-section {
     padding: 60px 25px;
   }
 
-  .Skills-title h1 {
+  .Projects-container > h1 {
     font-size: 38px;
   }
 
-  .Skills-title p {
-    font-size: 15px;
+  .Project-header {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .Skill-item {
-    gap: 15px;
-    padding: 25px 0;
+  .Project-header h2 {
+    font-size: 22px;
   }
 
-  .Skill-number {
-    min-width: 30px;
+  .Project-description {
     font-size: 14px;
   }
 
-  .Skill-content h2 {
-    font-size: 20px;
+  .Project-images {
+    grid-template-columns: 1fr;
   }
 
+  .Project-images img {
+    height: auto;
+  }
+
+ 
+  .Skills-section {
+    padding: 60px 25px;
+  }
+  
+.Skills-title {
+  margin-bottom: 35px;
+  }
+  
+  .Skills-title h1 {
+    font-size: 38px;
+  }
+    
+  .Skills-title p {
+    font-size: 15px;
+  }
+    
+  .Skill-card {
+    padding: 22px 20px;
+  }
+    
+  .Skill-info {
+    gap: 12px;
+  }
+    
+  .Skill-info h2 {
+    font-size: 18px;
+  }
+  
+  .Skill-number {
+    min-width: 25px;
+    font-size: 13px;
+  }
+  
   .Skill-tags {
     gap: 8px;
+    margin-top: 18px;
   }
-
+  
   .Skill-tags span {
-    font-size: 13px;
     padding: 7px 12px;
+    font-size: 13px;
   }
-
+    
   .Certificates-section {
     margin-top: 55px;
   }
-
+  
   .Certificates-title h2 {
     font-size: 27px;
   }
-
-  .Certificate-item {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
+  
+  .Certificate-card {
+    padding: 22px 20px;
   }
-
+  
+  .Certificate-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .Certificate-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
   .Certificate-date {
     font-size: 13px;
   }
+  
+  .Certificate-toggle {
+    font-size: 13px;
+  }
+    
+  .Certificate-image {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  
+  .Certificate-image img {
+    width: 100%;
+    height: auto;
+  }
+  
 }

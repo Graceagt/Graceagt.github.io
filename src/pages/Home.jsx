@@ -25,7 +25,7 @@ const Home = () => {
               <i className="fab fa-github" aria-hidden="true"></i>
               </a>
 
-              <a href="#resume" 
+              <a href="https://drive.google.com/file/d/1eI-72ZB7_tL8YQQgAj4bPvlreOQHxOtp/view?usp=sharing" 
               className="btn-primary" 
               aria-label="Resume">
               <i className="fas fa-file-alt" aria-hidden="true"></i>
@@ -38,6 +38,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
 
       {/* About Me */}
       <section id="AboutMe" className="AboutMe-section">
@@ -53,6 +54,15 @@ const Home = () => {
             </div>          
         </div>
       </section>
+            {/* Headline */}
+            <section id="Headline" className="Headline-section">
+            <div className="Headline-container">
+            <div className="Headline-text">
+            <h2>Data, Business & Technology Enthusiast</h2>
+            </div>          
+            </div>
+      </section>
+
     </main>
   );
 };
