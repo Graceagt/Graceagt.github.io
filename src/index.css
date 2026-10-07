@@ -1053,7 +1053,7 @@ code {
   }
 
  
-  .Skills-section {
+.Skills-section {
     padding: 60px 25px;
   }
   
@@ -1068,9 +1068,15 @@ code {
   .Skills-title p {
     font-size: 15px;
   }
+
+  .Skills-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+  }
     
   .Skill-card {
-    padding: 22px 20px;
+    padding: 22px 20px; 
   }
     
   .Skill-info {
