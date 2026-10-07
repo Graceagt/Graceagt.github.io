@@ -28,6 +28,11 @@ code {
     monospace;
 }
 
+main {
+  flex: 1;
+}
+
+
 
 /* --------------------------------------HEADER--------------------------------------*/
 .header {
@@ -95,13 +100,11 @@ code {
 
 /* --------------------------------------FOOTER--------------------------------------*/
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  align-items: center;
   background-color: #fefefe;
-  padding: 2px 5px;
+  padding: 8px 5px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .footer p{ 
